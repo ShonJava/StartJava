@@ -20,11 +20,11 @@ public class ConditionalStatement {
             System.out.println("people's height < 1.80");
         }
 
-        char firstOfName = 'M';
-        if(firstOfName == 'M') {
-            System.out.println("first of name is " + firstOfName);
-        } else if(firstOfName == 'I') {
-            System.out.println("first of name is " + firstOfName);
+        char pervayaBykvaImeni = 'M';
+        if(pervayaBykvaImeni == 'M') {
+            System.out.println("first of name is " + pervayaBykvaImeni);
+        } else if(pervayaBykvaImeni == 'I') {
+            System.out.println("first of name is " + pervayaBykvaImeni);
         } else {
             System.out.println("error");
         }

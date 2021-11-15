@@ -4,7 +4,7 @@ public class Calculator {
     }
 
     public static int calculate(int firstNumber, int secondNumber, char symbol) {
-        int result = 1;
+        int result = 0;
         if (symbol == '+') {
             result = firstNumber + secondNumber;
         } else if (symbol == '-') {
@@ -13,8 +13,9 @@ public class Calculator {
             result = firstNumber * secondNumber;
         } else if (symbol == '/') {
             result = firstNumber / secondNumber;
-        } else if (symbol == '^') {            
-            while (secondNumber > 1) {
+        } else if (symbol == '^') { 
+            result = 1;           
+            while (secondNumber > 1) {                
                 result *= firstNumber;
                 secondNumber--; 
             }

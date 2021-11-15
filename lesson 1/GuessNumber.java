@@ -10,10 +10,9 @@ public class GuessNumber {
         while(myNumber > magicNumber) {            
             System.out.println((myNumber + 1) + " it's no GuessNumber, number less than this");
             myNumber--;
-            
         }
         if(myNumber == magicNumber) {
-                System.out.println("yes, you find GuessNumber " + magicNumber);
+            System.out.println("yes, you find GuessNumber " + magicNumber);
         }
     }
 }
