@@ -1,5 +1,4 @@
 public class WolfModern {
-
     private String male = "man";
     private String nick = "Cucumber";
     public String getNick() {
