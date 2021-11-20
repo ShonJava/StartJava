@@ -7,5 +7,6 @@ public class PersonTest {
     System.out.println("Age og person " + personOne.age);
     System.out.print("Person have ");
     personOne.run();
+    System.out.print(personOne.learn());
     }
 }
