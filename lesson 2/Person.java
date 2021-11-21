@@ -8,16 +8,20 @@ public class Person {
     void move() {
         System.out.println("moving");
     }
+
     void sit() {
         System.out.println("sit down");
     }
+
     void run() {
         System.out.println("running");
     }
+
     String speak() {
         System.out.println("speaking" + " ");
         return "hello";
     }
+    
     boolean learn() {
         System.out.println("learning Java" + " ");
         return true;
