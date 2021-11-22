@@ -1,8 +1,9 @@
 public class Wolf {
-    String male = "man";
-    String nick = "Cucumber";
-    int weight = 30;
-    String color = "grey";
+    
+    String male;
+    String nickName;
+    int weight;
+    String color;
 
     void run() {
         System.out.println("running");
