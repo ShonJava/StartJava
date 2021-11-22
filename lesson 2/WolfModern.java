@@ -1,16 +1,24 @@
 public class WolfModern {
-    private String male = "man";
-    private String nick = "Cucumber";
-    private int age = 8;
-    private int weight = 30;
-    private String colour = "grey";
+    private String male;
+    private String nickName;
+    private int age;
+    private int weight;
+    private String colour;
 
-    public String getNick() {
-        return nick;
+    public String getMale() {
+        return male;
     }
 
-    public void setNick(String nick) {
-        this.nick = nick;
+    public void setMale(String male) {
+        this.male = male;
+    }
+
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
     public String getColour() {
@@ -19,6 +27,14 @@ public class WolfModern {
 
     public void setColour(String colour) {
         this.colour = colour;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
     }  
 
     public int getAge() {
