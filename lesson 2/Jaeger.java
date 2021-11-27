@@ -55,7 +55,7 @@ public class Jaeger {
     }
 
     public void move() {
-        System.out.println(name + " wins" + kaijuKilled + "kaijus");
+        System.out.println(name + " wins " + kaijuKilled + " kaijus");
         System.out.println("Height " + height + " weight " + weight);
         System.out.println("origin " + origin + " mark " + mark);        
     }
