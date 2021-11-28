@@ -2,60 +2,44 @@ public class Calc {
     
     private int firstNumber;
     private int secondNumber;
-    private char symbol = '+';
+    private char sign;
     private int result;    
-
-    public int getFirstNumber() {
-        return firstNumber;
-    }
 
     public void setFirstNumber(int firstNumber) {
         this.firstNumber = firstNumber;
-    }
-
-    public int getSecondNumber() {
-        return secondNumber;
-    }
+    }    
 
     public void setSecondNumber(int secondNumber) {
         this.secondNumber = secondNumber;
-    }
+    }    
 
-    public int getSymbol() {
-        return symbol;
+    public void setSign(char sign) {
+        this.sign = sign;
     }
-
-    public void setSymbol(char symbol) {
-        this.symbol = symbol;
-    }
-
-    public int getResult() {
-        return result;
-    }
-
-    public void operation() {
-        switch(symbol) {
+    
+    public void operate() {
+        switch(sign) {
             case('+'):
                 result = firstNumber + secondNumber;
-                System.out.println("Summa " + result);
+                System.out.println("Sum of numbers is " + result);
                 break;
             case('-'):
                 result = firstNumber - secondNumber;
-                System.out.println("Ostatok ot vichetania " + result);
+                System.out.println("Remaider from deduction is " + result);
                 break;
             case('*'):
                 result = firstNumber * secondNumber;
-                System.out.println("Proizvedenie " + result);
+                System.out.println("Multiplication of numbers is " + result);
                 break;
             case('/'):
                 result = firstNumber / secondNumber;
-                System.out.println("Ostatok ot deleniya" + result);
+                System.out.println("Remaider of the division is " + result);
                 break;
             case('%'):
                 if(firstNumber % secondNumber == 0) {
-                    System.out.println("Bez ostatka");
+                    System.out.println("Without a remainder");
                 } else {
-                    System.out.println("Ostatok " + firstNumber % secondNumber);
+                    System.out.println("Remainder is " + firstNumber % secondNumber);
                 }
                 break;
             case('^'):
@@ -63,10 +47,10 @@ public class Calc {
                 for(int i = 0; i < secondNumber; i++) {
                     result *= firstNumber;
                 }
-                    System.out.println("Stepen chisla " + result);
+                System.out.println("The power of the number is " + result);
                 break;
             default:
-                System.out.println("Ispolzyite +  -  *  /  %  ^");
+                System.out.println("Use: +  -  *  /  %  ^");
         }    
     }
 }
