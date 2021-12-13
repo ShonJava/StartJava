@@ -1,43 +1,18 @@
-import java.util.Scanner;
+import java.util.Random;
 
 public class GuessNumber {
-    private Player playerOne;
-    private Player playerTwo;
+    Random random = new Random(100);
+    int number = (int) (Math.random() * 101);
 
-    public GuessNumber(Player playerOne, Player playerTwo) {
+    private String playerOne;
+    private Srting playerTwo;
+
+    public Player(String playerOne, String playerTwo) {
         this.playerOne = playerOne;
         this.playerTwo = playerTwo;
-    }
+}
 
-    public void guessingNumber() {
-        Scanner scanner = new Scanner(System.in);
-        int compNumber = (int) (Math.random() * 101);   
-
-        do {
-            System.out.print(playerOne.getName() + ", введите число: ");
-            playerOne.setNumber(scanner.nextInt());
-
-            if (playerOne.getNumber() > compNumber) {
-                System.out.println("Ваше число больше, чем загаданное компьютером");
-            } else if (playerOne.getNumber() < compNumber) {
-                System.out.println("Ваше число меньше, чем загаданное компьютером");
-            } else {
-                System.out.println("Поздравляем!" + " " + playerOne.getName() + " " + "победил!");
-                break;
-            }
-
-            System.out.print(playerTwo.getName() + ", введите число: ");
-            playerTwo.setNumber(scanner.nextInt());
-
-            if (playerTwo.getNumber() > compNumber) {
-                System.out.println("Ваше число больше, чем загаданное компьютером");
-            } else if (playerTwo.getNumber() < compNumber) {
-                System.out.println("Ваше число меньше, чем загаданное компьютером");
-            } else {
-                System.out.println("Поздравляем!" + " " + playerTwo.getName() + " " + "победил!");
-                break;
-            }
-
-        } while (true);     
+    public void screen() {
+        System.out.println(number);
     }
 }

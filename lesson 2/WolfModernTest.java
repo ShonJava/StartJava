@@ -6,7 +6,7 @@ public class WolfModernTest {
         System.out.println("Nick of wolf " + wolf.getNickName()); 
         wolf.setMale("Man");
         System.out.println("Male of wolf " + wolf.getMale());       
-        wolf.setAge(5);        
+        wolf.setAge(8);        
         System.out.println("age wolf " + wolf.getAge());
         wolf.setWeight(26);
         System.out.println("Weight of wolf " + wolf.getWeight());        
