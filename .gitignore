@@ -1,3 +1,6 @@
 out
 *.class
 *.iml
+*.xml
+.idea
+.git
