@@ -15,11 +15,10 @@ class CalculatorTest {
             calculator.setOperator(elements[1].charAt(0));
             calculator.setNumber2(Integer.parseInt(elements[2]));
             calculator.calculate();
-            do{
+            do {
                 System.out.println("Do you want to be continue? [yes/no]");
                 answer = console.nextLine();
             } while (!answer.equals("yes") && !answer.equals("no"));
         } while (answer.equals("yes"));
-
     }
 }
