@@ -8,12 +8,7 @@ class CalculatorTest {
         Scanner console = new Scanner(System.in);
         String answer;
         do {
-            System.out.println("Enter the math operation");
-            String words = console.nextLine();
-            String[] elements = words.split(" ");
-            calculator.setNumber1(Integer.parseInt(elements[0]));
-            calculator.setOperator(elements[1].charAt(0));
-            calculator.setNumber2(Integer.parseInt(elements[2]));
+            calculator.start();
             calculator.calculate();
             do {
                 System.out.println("Do you want to be continue? [yes/no]");

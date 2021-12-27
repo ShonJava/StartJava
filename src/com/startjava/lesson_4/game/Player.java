@@ -7,15 +7,19 @@ class Player {
     public Player(String name) {
         this.name = name;
     }
+
     public String getName() {
         return name;
     }
+
     public int[] getAttempts() {
         return attempts;
     }
+
     public int getAttempt(int i) {
         return attempts[i];
     }
+
     public void addAttempt(int number, int i) {
         attempts[i] = number;
     }

@@ -16,7 +16,7 @@ class GuessNumberTest {
         GuessNumber guessNumber = new GuessNumber(playerOne, playerOne);
         String answer;
         do {
-            guessNumber.startGame();
+            guessNumber.gameStart();
             do {
                 System.out.println("Do you want to continue the game? [yes/no]");
                 answer = console.next();

@@ -1,28 +1,27 @@
 package com.startjava.lesson_4.game;
 
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 
 class GuessNumber {
     private Player playerOne;
     private Player playerTwo;
     private Scanner scanner;
-    private int compNumber;
+    private int secretNumber;
 
     public GuessNumber(Player playerOne, Player playerTwo) {
         this.playerOne = playerOne;
         this.playerTwo = playerTwo;
     }
 
-    public void startGame() {
+    public void gameStart() {
         scanner = new Scanner(System.in);
-        compNumber = (int) (Math.random() * 101);
+        secretNumber = (int) (Math.random() * 101);
         int i;
         for (i = 0; i <= 9; i++) {
             if (!makeMove(playerOne, i)) {
                 break;
-            } else if (!makeMove(playerTwo, i)) {
+            } if (!makeMove(playerTwo, i)) {
                 break;
             }
         }
@@ -41,10 +40,10 @@ class GuessNumber {
     private boolean makeMove(Player player, int i) {
         inputNumber(player, i);
         compareNumbers(player, i);
-        if (player.getAttempt(i) == compNumber) {
+        if (player.getAttempt(i) == secretNumber) {
             return false;
         }
-        return playerOne.getAttempt(i) != compNumber;
+        return playerOne.getAttempt(i) != secretNumber;
     }
 
     private void inputNumber(Player player, int i) {
@@ -53,12 +52,12 @@ class GuessNumber {
     }
 
     private boolean compareNumbers(Player player, int i) {
-        if (player.getAttempt(i) > compNumber) {
-            System.out.println("Ваше число больше, чем загаданное компьютером " + compNumber);
-        } else if (player.getAttempt(i) < compNumber) {
-            System.out.println("Ваше число меньше, чем загаданное компьютером" + compNumber);
+        if (player.getAttempt(i) > secretNumber) {
+            System.out.println("Ваше число больше, чем загаданное компьютером " + secretNumber);
+        } else if (player.getAttempt(i) < secretNumber) {
+            System.out.println("Ваше число меньше, чем загаданное компьютером" + secretNumber);
         } else {
-            System.out.println("Игрок " + player.getName() + " угадал число " + compNumber + " с " + (i + 1) + " попытки");
+            System.out.println("Игрок " + player.getName() + " угадал число " + secretNumber + " с " + (i + 1) + " попытки");
         }
         return true;
     }

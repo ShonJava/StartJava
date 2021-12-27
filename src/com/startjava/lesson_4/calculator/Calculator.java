@@ -1,6 +1,9 @@
 package com.startjava.lesson_4.calculator;
 
+import java.util.Scanner;
+
 class Calculator {
+    Scanner console  = new Scanner(System.in);
     private int number1;
     private int number2;
     private char operator;
@@ -15,6 +18,15 @@ class Calculator {
 
     public void setOperator(char operator) {
         this.operator = operator;
+    }
+
+    public void start() {
+        System.out.println("Enter the math operation");
+        String words = console.nextLine();
+        String[] elements = words.split(" ");
+        setNumber1(Integer.parseInt(elements[0]));
+        setOperator(elements[1].charAt(0));
+        setNumber2(Integer.parseInt(elements[2]));
     }
 
     public void calculate() {
