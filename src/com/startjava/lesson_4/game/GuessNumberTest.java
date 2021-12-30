@@ -2,25 +2,27 @@ package com.startjava.lesson_4.game;
 
 import java.util.Scanner;
 
-class GuessNumberTest {
-    public static void main(String[] arg) {
-        Scanner console = new Scanner(System.in);
-        System.out.println("Yor have 10 attempts");
+public class GuessNumberTest {
 
-        System.out.println("Enter the name of first player");
-        Player playerOne = new Player(console.next());
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter the name of second player");
-        Player playerTwo = new Player(console.next());
+        System.out.println("Hello! You have 10 attempts. Good luck");
+        System.out.println("Player #1 Enter your name: ");
+        Player firstPlayer = new Player(scan.next());
+        System.out.println("Player #2 Enter your name: ");
+        Player secondPlayer = new Player(scan.next());
 
-        GuessNumber guessNumber = new GuessNumber(playerOne, playerOne);
         String answer;
+
         do {
-            guessNumber.gameStart();
+            GuessNumber myGame = new GuessNumber(firstPlayer, secondPlayer);
+            myGame.startGame();
+
             do {
-                System.out.println("Do you want to continue the game? [yes/no]");
-                answer = console.next();
-            } while(!answer.equals("yes") && !answer.equals("no"));
-        } while(answer.equals("yes"));
+                System.out.println("\n" + "Want to continue? [Yes/No]");
+                answer = scan.next();
+            } while(!answer.equals("Yes") && !answer.equals("No"));
+        } while(answer.equals("Yes"));
     }
 }

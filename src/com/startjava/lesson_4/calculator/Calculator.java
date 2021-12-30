@@ -20,16 +20,13 @@ class Calculator {
         this.operator = operator;
     }
 
-    public void start() {
+    public void calculate() {
         System.out.println("Enter the math operation");
         String words = console.nextLine();
         String[] elements = words.split(" ");
         setNumber1(Integer.parseInt(elements[0]));
         setOperator(elements[1].charAt(0));
         setNumber2(Integer.parseInt(elements[2]));
-    }
-
-    public void calculate() {
         switch(operator) {
             case '+':
                 System.out.println("sum is " + (number1 + number2));

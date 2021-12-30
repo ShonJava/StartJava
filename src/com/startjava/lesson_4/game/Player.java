@@ -1,8 +1,13 @@
 package com.startjava.lesson_4.game;
 
-class Player {
+import java.util.Arrays;
+
+public class Player {
+
     private String name;
-    private int[] attempts = new int[10];
+    private int number;
+    private int[] numbers = new int[10];
+    private boolean isWin;
 
     public Player(String name) {
         this.name = name;
@@ -12,17 +17,25 @@ class Player {
         return name;
     }
 
-    public int[] getAttempts() {
-        return attempts;
+    public int getNumber() {
+        return number;
     }
 
-    public int getAttempt(int i) {
-        return attempts[i];
+    public void setNumber(int attempt, int number) {
+        this.number = number;
+        numbers[attempt] = number;
     }
 
-    public void addAttempt(int number, int i) {
-        attempts[i] = number;
+    public int[] getNumbers(int attempt) {
+        return Arrays.copyOf(numbers, attempt);
     }
 
+    public boolean getIsWin() {
+        return isWin;
+    }
 
+    public void setIsWin(boolean isWin) {
+        this.isWin = isWin;
+    }
 }
+

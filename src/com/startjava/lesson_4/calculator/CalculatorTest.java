@@ -8,7 +8,6 @@ class CalculatorTest {
         Scanner console = new Scanner(System.in);
         String answer;
         do {
-            calculator.start();
             calculator.calculate();
             do {
                 System.out.println("Do you want to be continue? [yes/no]");
