@@ -2,17 +2,23 @@ package com.startjava.lesson_4.calculator;
 
 import java.util.Scanner;
 
-class CalculatorTest {
-    public static void main(String[] arg) {
-        Calculator calculator = new Calculator();
-        Scanner console = new Scanner(System.in);
-        String answer;
-        do {
-            calculator.calculate();
+public class CalculatorTest {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Calculator calc;
+        String reply = "да";
+
+        while(reply.equals("да")) {
+            System.out.print("Введите математическое выражение: ");
+            calc = new Calculator(scanner.nextLine());
+            System.out.println("Результат вычисления = " + calc.calculate());
+
             do {
-                System.out.println("Do you want to be continue? [yes/no]");
-                answer = console.nextLine();
-            } while (!answer.equals("yes") && !answer.equals("no"));
-        } while (answer.equals("yes"));
+                System.out.println("Хотите продолжить вычисления? [да/нет]");
+                reply = scanner.nextLine();
+            } while (!reply.equals("да") && !reply.equals("нет"));
+        }
+        scanner.close();
     }
 }
