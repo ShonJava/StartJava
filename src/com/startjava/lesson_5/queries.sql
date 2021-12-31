@@ -1,9 +1,9 @@
 --1.
- SELECT * FROM Jaegers;
+SELECT * FROM Jaegers;
 --2.
 SELECT * FROM Jaegers WHERE status = 'destroyed';
 --3.
-SELECT * FROM Jaegers WHERE mark = '1' IN mark = '6';
+SELECT * FROM Jaegers WHERE mark = '1' OR mark = '6';
 --4.
 SELECT * FROM Jaegers ORDER BY mark DESC;
 --5.
