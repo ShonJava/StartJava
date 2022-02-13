@@ -12,6 +12,7 @@ public class VariablesTheme {
         boolean a2 = true;
         System.out.println("Notebook " + name + " " +  model + " have a " + core + "cores, " + " pix " + pix + " good device " + a2);
         System.out.println();
+
         int x = 100;
         int y = 200;
         int sale = 11;
@@ -19,11 +20,13 @@ public class VariablesTheme {
         System.out.println("Товар 1 стоит " + (100-(100*0.11)));
         System.out.println("Товар 2 стоит " + (200-(200*0.11)));
         System.out.println();
+
         System.out.println("   J    a  v     v  a    ");
         System.out.println("   J   a a  v   v  a a   ");
         System.out.println("J  J  aaaaa  V V  aaaaa  ");
         System.out.println(" JJ  a     a  V  a     a");
         System.out.println();
+
         byte byte_1 = 127;
         byte byte_inc = (byte) (byte_1 + 1);
         byte byte_dec = (byte) (byte_1 - 1);
@@ -45,7 +48,6 @@ public class VariablesTheme {
         char char_2byte = 65535;
         char char_inc = (char) (char_2byte + 1);
         char char_dec = (char) (char_2byte -1);
-
         System.out.println("max byte " + byte_1 + "; i++ = " + byte_inc + " i-- = " + byte_dec);
         System.out.println("max short " + short_2byte + "; i++ = " + short_inc + " i-- = " + short_dec);
         System.out.println("max int " + int_4byte + "; i++ = " + int_inc + " i-- = " + int_dec);
@@ -54,6 +56,7 @@ public class VariablesTheme {
         System.out.println("max double " + double_8byte308 + "; i++ = " + double_inc + " i-- = " + double_dec);
         System.out.println("max char " + char_2byte + "; i++ = " + char_inc + " i-- = " + char_dec);
         System.out.println();
+
         int firstNum = 1;
         int secondNum = 2;
         int num;
@@ -63,6 +66,7 @@ public class VariablesTheme {
         secondNum = num;
         System.out.println("first number is " + firstNum + ", second number is " + secondNum);
         System.out.println();
+
         int one = 35;
         int two = 38;
         int three = 64;
@@ -74,6 +78,7 @@ public class VariablesTheme {
         System.out.println("Symbol dec " + four + " = " + (char)(four));
         System.out.println("Symbol dec " + five + " = " + (char)(five));
         System.out.println();
+
         int k = 345;
         int l1 = k / 10;
         int l2 = k % 10;
@@ -86,13 +91,13 @@ public class VariablesTheme {
         char ba = 92;
         char la = 95;
         char bo = 40;
-
         System.out.println("    " + ab + ba + "      ");
         System.out.println("   " + ab + "  " + ba + "     ");
         System.out.println("  " + ab + la + bo + " " + ((char) (bo + 1)) + ba + "    ");
         System.out.println(" " + ab + "      " + ba + "   ");
         System.out.println(ab + "" + la + "" + la + "" + la + "" + la + "" + ab + "" + ba + "" + la + "" + la + "" + ba + " ");
         System.out.println();
+
         int secund = 86399;
         int minute = secund / 60 - 23 * 60;
         int hour = secund / 3600;
