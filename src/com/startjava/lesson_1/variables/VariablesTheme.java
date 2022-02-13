@@ -2,6 +2,7 @@ package com.startjava.lesson_1.variables;
 
 public class VariablesTheme {
     public static void main(String[] args) {
+        //Создание переменных и вывод их значений на консоль
         String name = "Samsung";
         char sign = 'R';
         int model = 428;
@@ -13,6 +14,7 @@ public class VariablesTheme {
         System.out.println("Notebook " + name + " " +  model + " have a " + core + "cores, " + " pix " + pix + " good device " + a2);
         System.out.println();
 
+        //Расчет стоимости товара со скидкой
         int x = 100;
         int y = 200;
         int sale = 11;
@@ -21,12 +23,14 @@ public class VariablesTheme {
         System.out.println("Товар 2 стоит " + (200-(200*0.11)));
         System.out.println();
 
+        //Вывод на консоль слова JAVA
         System.out.println("   J    a  v     v  a    ");
         System.out.println("   J   a a  v   v  a a   ");
         System.out.println("J  J  aaaaa  V V  aaaaa  ");
         System.out.println(" JJ  a     a  V  a     a");
         System.out.println();
 
+        //Отображение min и max значений числовых типов данных
         byte byte_1 = 127;
         byte byte_inc = (byte) (byte_1 + 1);
         byte byte_dec = (byte) (byte_1 - 1);
@@ -57,6 +61,7 @@ public class VariablesTheme {
         System.out.println("max char " + char_2byte + "; i++ = " + char_inc + " i-- = " + char_dec);
         System.out.println();
 
+        //Перестановка значений переменных
         int firstNum = 1;
         int secondNum = 2;
         int num;
@@ -67,6 +72,7 @@ public class VariablesTheme {
         System.out.println("first number is " + firstNum + ", second number is " + secondNum);
         System.out.println();
 
+        //Вывод ASCII-символов и их кодов
         int one = 35;
         int two = 38;
         int three = 64;
@@ -79,6 +85,7 @@ public class VariablesTheme {
         System.out.println("Symbol dec " + five + " = " + (char)(five));
         System.out.println();
 
+        //Произведение и сумма цифр числа
         int k = 345;
         int l1 = k / 10;
         int l2 = k % 10;
@@ -87,6 +94,8 @@ public class VariablesTheme {
         int sum = ll + l3 + l2;
         System.out.println("sum 345 is " + sum + " =  " + l2 + " + " + l3 + " + " + ll);
         System.out.println();
+
+        //Вывод на консоль ASCII-арт Дюка
         char ab = 47;
         char ba = 92;
         char la = 95;
@@ -98,6 +107,7 @@ public class VariablesTheme {
         System.out.println(ab + "" + la + "" + la + "" + la + "" + la + "" + ab + "" + ba + "" + la + "" + la + "" + ba + " ");
         System.out.println();
 
+        //Преобразование секунд
         int secund = 86399;
         int minute = secund / 60 - 23 * 60;
         int hour = secund / 3600;
